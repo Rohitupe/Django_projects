@@ -1,0 +1,57 @@
+body{
+    background-color: bisque; 
+}
+.heading1{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-decoration: overline;
+    text-shadow: 2px 2px 4px rgb(99, 99, 240);
+    font-size: 50px;
+    word-spacing: normal;
+    font-weight: bold;
+}
+.heading2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 55px;
+    padding: 15px;
+    letter-spacing: 2px;
+    border: 1.5px solid gray;
+    font-size: 32px;
+    border-width: 10px;
+    color: rgb(39, 45, 51);
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 18px 40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 18px;
+}
+.checkbox{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 2px; */
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.button{
+    border: 1.5px dashed black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:inline-start;
