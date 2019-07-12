@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/">Home</a></li> 
+        {% if user.is_authenticated %}
+
+            <li><h4>Hello {{user.first_name}}</h4></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+            <div>  
+                {% for datas in data %}
+
+                    <h2>{{datas.name}}</h2>
+                    <img src="{{datas.image.url}}" width="250" alt="Profile_pic">            
+
+                {% endfor %}       
+            </div>
+
+        {% else %}
+
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+
+        {% endif %}
+    </ul>
+
+    
+    {% block body %}
+        
+    {% endblock body %}
+        
+</body>
+</html>
